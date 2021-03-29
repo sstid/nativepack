@@ -1,0 +1,203 @@
+<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="description" content="A Webpack-based toolkit to build your React Native application with full support of Webpack ecosystem."/><meta name="og:title" content="react-native-webpack-toolkit"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link href="https://fonts.googleapis.com/css2?family=Fira+Code&amp;family=Open+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/><title>Reporter | API docs | react-native-webpack-toolkit</title><meta name="next-head-count" content="9"/><link rel="preload" href="/_next/static/css/7419b12f1bb9ff9a7153.css" as="style"/><link rel="stylesheet" href="/_next/static/css/7419b12f1bb9ff9a7153.css" data-n-g=""/><link rel="preload" href="/_next/static/css/ac1156ed9db166509abb.css" as="style"/><link rel="stylesheet" href="/_next/static/css/ac1156ed9db166509abb.css" data-n-p=""/><noscript data-n-css=""></noscript><link rel="preload" href="/_next/static/chunks/main-b9209abb3a6913daf906.js" as="script"/><link rel="preload" href="/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework.418cf966c791d0d18665.js" as="script"/><link rel="preload" href="/_next/static/chunks/commons.9f934b610ecdda1884ba.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/_app-7e6e57e8d9e2693310d7.js" as="script"/><link rel="preload" href="/_next/static/chunks/a9a7754c.4fa2ea073f9bc2b72a0a.js" as="script"/><link rel="preload" href="/_next/static/chunks/7e6aee08154de2032468c5f5200b4e72aec121f3.9f56daffc375d4497c1e.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/docs/api/%5Btype%5D/%5Bid%5D-cdf3a8c75051f11c5b83.js" as="script"/></head><body><div id="__next"><div class="bg-black w-full flex flex-col min-h-scree text-cool-gray-400 min-h-screen"><header class="border-b border-gray-900"><div class="container m-auto max-w-screen-xl px-8 py-4 flex flex-col md:flex-row justify-between"><a class="text-2xl tracking-wide font-bold" href="/">react-native-webpack-toolkit</a><div class="text-xs flex items-center mt-8 md:mt-0"><a class="px-6 py-2 transition ease-in duration-200 uppercase rounded-full border-2 border-cool-gray-400 hover:bg-cool-gray-300 hover:border-cool-gray-300 hover:text-black" href="/docs/api">API docs</a><a href="https://github.com/callstack/react-native-webpack-toolkit" class="transition ease-in duration-200 uppercase rounded-full text-cool-gray-400 hover:text-cool-gray-300 ml-2" target="_blank" rel="noreferrer"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 h-9 w-9" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></div></div></header><main class="flex flex-1 justify-center py-14"><div class="container max-w-screen-xl py-10"><a class="transition ease-in duration-200 flex items-center cursor-pointer hover:text-cool-gray-300 font-bold ml-8" href="/docs/api"><span class="material-icons mt-0.5">arrow_back</span><span class="hover:underline">Back to listing</span></a><div class="overflow-x-auto"><div class="Markdown_markdown__2kNyu Markdown_floatingToc__24ItH"><h1 id="class-reporter"><span>Class:</span> Reporter<a aria-hidden="true" tabindex="-1" href="#class-reporter"><span class="icon icon-link"></span></a></h1>
+<div data-title="Reporter"></div>
+<p>Class that handles all reporting, logging and compilation progress handling.</p>
+<div class="toc">
+  <div class="toc-content">
+<h2 id="table-of-contents">Table of contents<a aria-hidden="true" tabindex="-1" href="#table-of-contents"><span class="icon icon-link"></span></a></h2>
+<h3 id="constructors">Constructors<a aria-hidden="true" tabindex="-1" href="#constructors"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li><a href="/docs/api/classes/reporter#constructor">constructor</a></li>
+</ul>
+<h3 id="properties">Properties<a aria-hidden="true" tabindex="-1" href="#properties"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li><a href="/docs/api/classes/reporter#isverbose">isVerbose</a></li>
+<li><a href="/docs/api/classes/reporter#isworker">isWorker</a></li>
+</ul>
+<h3 id="methods">Methods<a aria-hidden="true" tabindex="-1" href="#methods"><span class="icon icon-link"></span></a></h3>
+<ul>
+<li>
+<p><a href="/docs/api/classes/reporter#enablefilelogging">enableFileLogging</a></p>
+</li>
+<li>
+<p><a href="/docs/api/classes/reporter#flushfilelogs">flushFileLogs</a></p>
+</li>
+<li>
+<p><a href="/docs/api/classes/reporter#process">process</a></p>
+</li>
+<li>
+<p><a href="/docs/api/classes/reporter#stop">stop</a></p>
+</li>
+<li>
+<p><a href="/docs/api/classes/reporter#colorizetext">colorizeText</a></p>
+</li>
+<li>
+<p><a href="/docs/api/classes/reporter#getsymbolfortype">getSymbolForType</a></p>
+</li></ul></div>
+
+
+</div>
+<h2 id="constructors-1">Constructors<a aria-hidden="true" tabindex="-1" href="#constructors-1"><span class="icon icon-link"></span></a></h2>
+<h3 id="constructor">constructor<a aria-hidden="true" tabindex="-1" href="#constructor"><span class="icon icon-link"></span></a></h3>
+<p>+ <strong>new Reporter</strong>(<code>config?</code>: <a href="/docs/api/interfaces/reporterconfig"><em>ReporterConfig</em></a>): <a href="/docs/api/classes/reporter"><em>Reporter</em></a></p>
+<p>Create new instance of Reporter.
+If Reporter is running as a non-worker, it will start outputting to terminal.</p>
+<h4 id="parameters">Parameters:<a aria-hidden="true" tabindex="-1" href="#parameters"><span class="icon icon-link"></span></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Name</th><th align="left">Type</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left"><code>config</code></td><td align="left"><a href="/docs/api/interfaces/reporterconfig"><em>ReporterConfig</em></a></td><td align="left">Reporter configuration. Defaults to empty object.</td></tr></tbody></table>
+<h4 id="returns">Returns:<a aria-hidden="true" tabindex="-1" href="#returns"><span class="icon icon-link"></span></a></h4>
+<p><a href="/docs/api/classes/reporter"><em>Reporter</em></a></p>
+<div class="sources">
+<p>Defined in: <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L94" target="_blank">src/Reporter.ts:94</a></p>
+<h2 id="properties-1">Properties<a aria-hidden="true" tabindex="-1" href="#properties-1"><span class="icon icon-link"></span></a></h2>
+<h3 id="isverbose">isVerbose<a aria-hidden="true" tabindex="-1" href="#isverbose"><span class="icon icon-link"></span></a></h3>
+<p>• <code>Readonly</code> <strong>isVerbose</strong>: <em>boolean</em></p>
+<p>Whether reporter is running in verbose mode.</p>
+<div class="sources">
+<p>Defined in: <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L88" target="_blank">src/Reporter.ts:88</a></p>
+<hr>
+<h3 id="isworker">isWorker<a aria-hidden="true" tabindex="-1" href="#isworker"><span class="icon icon-link"></span></a></h3>
+<p>• <code>Readonly</code> <strong>isWorker</strong>: <em>boolean</em></p>
+<p>Whether reporter is running as a worker.</p>
+<div class="sources">
+<p>Defined in: <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L86" target="_blank">src/Reporter.ts:86</a></p>
+<h2 id="methods-1">Methods<a aria-hidden="true" tabindex="-1" href="#methods-1"><span class="icon icon-link"></span></a></h2>
+<h3 id="enablefilelogging">enableFileLogging<a aria-hidden="true" tabindex="-1" href="#enablefilelogging"><span class="icon icon-link"></span></a></h3>
+<p>▸ <strong>enableFileLogging</strong>(<code>filename</code>: <em>string</em>): <em>void</em></p>
+<p>Enable reporting to file alongside reporting to terminal.</p>
+<h4 id="parameters-1">Parameters:<a aria-hidden="true" tabindex="-1" href="#parameters-1"><span class="icon icon-link"></span></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Name</th><th align="left">Type</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left"><code>filename</code></td><td align="left"><em>string</em></td><td align="left">Absolute path to file to which write logs.</td></tr></tbody></table>
+<h4 id="returns-1">Returns:<a aria-hidden="true" tabindex="-1" href="#returns-1"><span class="icon icon-link"></span></a></h4>
+<p><em>void</em></p>
+<div class="sources">
+<p>Defined in: <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L124" target="_blank">src/Reporter.ts:124</a></p>
+<hr>
+<h3 id="flushfilelogs">flushFileLogs<a aria-hidden="true" tabindex="-1" href="#flushfilelogs"><span class="icon icon-link"></span></a></h3>
+<p>▸ <strong>flushFileLogs</strong>(): <em>void</em></p>
+<p>Flush all buffered logs to a file provided that file
+reporting was enabled with <a href="/docs/api/classes/reporter#enablefilelogging">enableFileLogging</a>.</p>
+<h4 id="returns-2">Returns:<a aria-hidden="true" tabindex="-1" href="#returns-2"><span class="icon icon-link"></span></a></h4>
+<p><em>void</em></p>
+<div class="sources">
+<p>Defined in: <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L132" target="_blank">src/Reporter.ts:132</a></p>
+<hr>
+<h3 id="process">process<a aria-hidden="true" tabindex="-1" href="#process"><span class="icon icon-link"></span></a></h3>
+<p>▸ <strong>process</strong>(<code>logEntry</code>: <a href="/docs/api/interfaces/logentry"><em>LogEntry</em></a>): <em>void</em></p>
+<p>Process new log entry and report it to terminal and file if file reporting was enabled with
+<a href="/docs/api/classes/reporter#enablefilelogging">enableFileLogging</a>.</p>
+<h4 id="parameters-2">Parameters:<a aria-hidden="true" tabindex="-1" href="#parameters-2"><span class="icon icon-link"></span></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Name</th><th align="left">Type</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left"><code>logEntry</code></td><td align="left"><a href="/docs/api/interfaces/logentry"><em>LogEntry</em></a></td><td align="left">Log entry to process &#x26; report.</td></tr></tbody></table>
+<h4 id="returns-3">Returns:<a aria-hidden="true" tabindex="-1" href="#returns-3"><span class="icon icon-link"></span></a></h4>
+<p><em>void</em></p>
+<div class="sources">
+<p>Defined in: <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L145" target="_blank">src/Reporter.ts:145</a></p>
+<hr>
+<h3 id="stop">stop<a aria-hidden="true" tabindex="-1" href="#stop"><span class="icon icon-link"></span></a></h3>
+<p>▸ <strong>stop</strong>(): <em>void</em></p>
+<p>Stop reporting and perform cleanup.</p>
+<h4 id="returns-4">Returns:<a aria-hidden="true" tabindex="-1" href="#returns-4"><span class="icon icon-link"></span></a></h4>
+<p><em>void</em></p>
+<div class="sources">
+<p>Defined in: <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L113" target="_blank">src/Reporter.ts:113</a></p>
+<hr>
+<h3 id="colorizetext">colorizeText<a aria-hidden="true" tabindex="-1" href="#colorizetext"><span class="icon icon-link"></span></a></h3>
+<p>▸ <code>Static</code><strong>colorizeText</strong>(<code>logType</code>: <a href="/docs/api/types/logtype"><em>LogType</em></a>, <code>text</code>: <em>string</em>): <em>string</em></p>
+<p>Apply ANSI colors to given text.</p>
+<p><strong><code>internal</code></strong></p>
+<h4 id="parameters-3">Parameters:<a aria-hidden="true" tabindex="-1" href="#parameters-3"><span class="icon icon-link"></span></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Name</th><th align="left">Type</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left"><code>logType</code></td><td align="left"><a href="/docs/api/types/logtype"><em>LogType</em></a></td><td align="left">Log type for the text, based on which different colors will be applied.</td></tr><tr><td align="left"><code>text</code></td><td align="left"><em>string</em></td><td align="left">Text to apply the color onto.</td></tr></tbody></table>
+<h4 id="returns-5">Returns:<a aria-hidden="true" tabindex="-1" href="#returns-5"><span class="icon icon-link"></span></a></h4>
+<p><em>string</em>
+— Text wrapped in ANSI color sequences.</p>
+<div class="sources">
+<p>Defined in: <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L75" target="_blank">src/Reporter.ts:75</a></p>
+<hr>
+<h3 id="getsymbolfortype">getSymbolForType<a aria-hidden="true" tabindex="-1" href="#getsymbolfortype"><span class="icon icon-link"></span></a></h3>
+<p>▸ <code>Static</code><strong>getSymbolForType</strong>(<code>logType</code>: <a href="/docs/api/types/logtype"><em>LogType</em></a>): <em>string</em></p>
+<p>Get message symbol for given log type.</p>
+<p><strong><code>internal</code></strong></p>
+<h4 id="parameters-4">Parameters:<a aria-hidden="true" tabindex="-1" href="#parameters-4"><span class="icon icon-link"></span></a></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th align="left">Name</th><th align="left">Type</th><th align="left">Description</th></tr></thead><tbody><tr><td align="left"><code>logType</code></td><td align="left"><a href="/docs/api/types/logtype"><em>LogType</em></a></td><td align="left">Log type.</td></tr></tbody></table>
+<h4 id="returns-6">Returns:<a aria-hidden="true" tabindex="-1" href="#returns-6"><span class="icon icon-link"></span></a></h4>
+<p><em>string</em>
+— String with the symbol.</p>
+<div class="sources">
+<p>Defined in: <a href="https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L58" target="_blank">src/Reporter.ts:58</a></p></div></div></div></div></div></div></div></div></div></div></div></div></main><footer class="bg-gray-900 h-20 flex justify-center"><div class="container max-w-screen-xl flex flex-col sm:flex-row justify-center sm:justify-between h-full items-center px-1 sm:px-6"><div class="text-auxiliary-200 flex">Built with<a href="https://github.com/TypeStrong/typedoc" class="transition ease-in duration-200 flex items-center cursor-pointer hover:text-cool-gray-300 font-bold mx-1" target="_blank" rel="noreferrer">TypeDoc<span class="material-icons text-base ml-1">launch</span></a>and<a href="https://nextjs.org/" class="transition ease-in duration-200 flex items-center cursor-pointer hover:text-cool-gray-300 font-bold mx-1" target="_blank" rel="noreferrer">Next.js<span class="material-icons text-base ml-1">launch</span></a></div><div><a href="https://github.com/callstack/react-native-webpack-toolkit" class="transition ease-in duration-200 flex items-center cursor-pointer hover:text-cool-gray-300 font-bold" target="_blank" rel="noreferrer"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 h-5 w-5 mr-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>GitHub</a></div></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"title":"Reporter","md":"\u003ch1 id=\"class-reporter\"\u003e\u003cspan\u003eClass:\u003c/span\u003e Reporter\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#class-reporter\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h1\u003e\n\u003cdiv data-title=\"Reporter\"\u003e\u003c/div\u003e\n\u003cp\u003eClass that handles all reporting, logging and compilation progress handling.\u003c/p\u003e\n\u003cdiv class=\"toc\"\u003e\n  \u003cdiv class=\"toc-content\"\u003e\n\u003ch2 id=\"table-of-contents\"\u003eTable of contents\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#table-of-contents\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003ch3 id=\"constructors\"\u003eConstructors\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#constructors\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"/docs/api/classes/reporter#constructor\"\u003econstructor\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"properties\"\u003eProperties\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#properties\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\u003ca href=\"/docs/api/classes/reporter#isverbose\"\u003eisVerbose\u003c/a\u003e\u003c/li\u003e\n\u003cli\u003e\u003ca href=\"/docs/api/classes/reporter#isworker\"\u003eisWorker\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"methods\"\u003eMethods\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#methods\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"/docs/api/classes/reporter#enablefilelogging\"\u003eenableFileLogging\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"/docs/api/classes/reporter#flushfilelogs\"\u003eflushFileLogs\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"/docs/api/classes/reporter#process\"\u003eprocess\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"/docs/api/classes/reporter#stop\"\u003estop\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"/docs/api/classes/reporter#colorizetext\"\u003ecolorizeText\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli\u003e\n\u003cp\u003e\u003ca href=\"/docs/api/classes/reporter#getsymbolfortype\"\u003egetSymbolForType\u003c/a\u003e\u003c/p\u003e\n\u003c/li\u003e\u003c/ul\u003e\u003c/div\u003e\n\n\n\u003c/div\u003e\n\u003ch2 id=\"constructors-1\"\u003eConstructors\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#constructors-1\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003ch3 id=\"constructor\"\u003econstructor\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#constructor\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e+ \u003cstrong\u003enew Reporter\u003c/strong\u003e(\u003ccode\u003econfig?\u003c/code\u003e: \u003ca href=\"/docs/api/interfaces/reporterconfig\"\u003e\u003cem\u003eReporterConfig\u003c/em\u003e\u003c/a\u003e): \u003ca href=\"/docs/api/classes/reporter\"\u003e\u003cem\u003eReporter\u003c/em\u003e\u003c/a\u003e\u003c/p\u003e\n\u003cp\u003eCreate new instance of Reporter.\nIf Reporter is running as a non-worker, it will start outputting to terminal.\u003c/p\u003e\n\u003ch4 id=\"parameters\"\u003eParameters:\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#parameters\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h4\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth align=\"left\"\u003eName\u003c/th\u003e\u003cth align=\"left\"\u003eType\u003c/th\u003e\u003cth align=\"left\"\u003eDescription\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003e\u003ccode\u003econfig\u003c/code\u003e\u003c/td\u003e\u003ctd align=\"left\"\u003e\u003ca href=\"/docs/api/interfaces/reporterconfig\"\u003e\u003cem\u003eReporterConfig\u003c/em\u003e\u003c/a\u003e\u003c/td\u003e\u003ctd align=\"left\"\u003eReporter configuration. Defaults to empty object.\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\n\u003ch4 id=\"returns\"\u003eReturns:\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#returns\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e\u003ca href=\"/docs/api/classes/reporter\"\u003e\u003cem\u003eReporter\u003c/em\u003e\u003c/a\u003e\u003c/p\u003e\n\u003cdiv class=\"sources\"\u003e\n\u003cp\u003eDefined in: \u003ca href=\"https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L94\" target=\"_blank\"\u003esrc/Reporter.ts:94\u003c/a\u003e\u003c/p\u003e\n\u003ch2 id=\"properties-1\"\u003eProperties\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#properties-1\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003ch3 id=\"isverbose\"\u003eisVerbose\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#isverbose\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e• \u003ccode\u003eReadonly\u003c/code\u003e \u003cstrong\u003eisVerbose\u003c/strong\u003e: \u003cem\u003eboolean\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003eWhether reporter is running in verbose mode.\u003c/p\u003e\n\u003cdiv class=\"sources\"\u003e\n\u003cp\u003eDefined in: \u003ca href=\"https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L88\" target=\"_blank\"\u003esrc/Reporter.ts:88\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003ch3 id=\"isworker\"\u003eisWorker\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#isworker\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e• \u003ccode\u003eReadonly\u003c/code\u003e \u003cstrong\u003eisWorker\u003c/strong\u003e: \u003cem\u003eboolean\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003eWhether reporter is running as a worker.\u003c/p\u003e\n\u003cdiv class=\"sources\"\u003e\n\u003cp\u003eDefined in: \u003ca href=\"https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L86\" target=\"_blank\"\u003esrc/Reporter.ts:86\u003c/a\u003e\u003c/p\u003e\n\u003ch2 id=\"methods-1\"\u003eMethods\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#methods-1\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h2\u003e\n\u003ch3 id=\"enablefilelogging\"\u003eenableFileLogging\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#enablefilelogging\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e▸ \u003cstrong\u003eenableFileLogging\u003c/strong\u003e(\u003ccode\u003efilename\u003c/code\u003e: \u003cem\u003estring\u003c/em\u003e): \u003cem\u003evoid\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003eEnable reporting to file alongside reporting to terminal.\u003c/p\u003e\n\u003ch4 id=\"parameters-1\"\u003eParameters:\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#parameters-1\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h4\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth align=\"left\"\u003eName\u003c/th\u003e\u003cth align=\"left\"\u003eType\u003c/th\u003e\u003cth align=\"left\"\u003eDescription\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003e\u003ccode\u003efilename\u003c/code\u003e\u003c/td\u003e\u003ctd align=\"left\"\u003e\u003cem\u003estring\u003c/em\u003e\u003c/td\u003e\u003ctd align=\"left\"\u003eAbsolute path to file to which write logs.\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\n\u003ch4 id=\"returns-1\"\u003eReturns:\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#returns-1\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e\u003cem\u003evoid\u003c/em\u003e\u003c/p\u003e\n\u003cdiv class=\"sources\"\u003e\n\u003cp\u003eDefined in: \u003ca href=\"https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L124\" target=\"_blank\"\u003esrc/Reporter.ts:124\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003ch3 id=\"flushfilelogs\"\u003eflushFileLogs\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#flushfilelogs\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e▸ \u003cstrong\u003eflushFileLogs\u003c/strong\u003e(): \u003cem\u003evoid\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003eFlush all buffered logs to a file provided that file\nreporting was enabled with \u003ca href=\"/docs/api/classes/reporter#enablefilelogging\"\u003eenableFileLogging\u003c/a\u003e.\u003c/p\u003e\n\u003ch4 id=\"returns-2\"\u003eReturns:\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#returns-2\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e\u003cem\u003evoid\u003c/em\u003e\u003c/p\u003e\n\u003cdiv class=\"sources\"\u003e\n\u003cp\u003eDefined in: \u003ca href=\"https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L132\" target=\"_blank\"\u003esrc/Reporter.ts:132\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003ch3 id=\"process\"\u003eprocess\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#process\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e▸ \u003cstrong\u003eprocess\u003c/strong\u003e(\u003ccode\u003elogEntry\u003c/code\u003e: \u003ca href=\"/docs/api/interfaces/logentry\"\u003e\u003cem\u003eLogEntry\u003c/em\u003e\u003c/a\u003e): \u003cem\u003evoid\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003eProcess new log entry and report it to terminal and file if file reporting was enabled with\n\u003ca href=\"/docs/api/classes/reporter#enablefilelogging\"\u003eenableFileLogging\u003c/a\u003e.\u003c/p\u003e\n\u003ch4 id=\"parameters-2\"\u003eParameters:\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#parameters-2\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h4\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth align=\"left\"\u003eName\u003c/th\u003e\u003cth align=\"left\"\u003eType\u003c/th\u003e\u003cth align=\"left\"\u003eDescription\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003e\u003ccode\u003elogEntry\u003c/code\u003e\u003c/td\u003e\u003ctd align=\"left\"\u003e\u003ca href=\"/docs/api/interfaces/logentry\"\u003e\u003cem\u003eLogEntry\u003c/em\u003e\u003c/a\u003e\u003c/td\u003e\u003ctd align=\"left\"\u003eLog entry to process \u0026#x26; report.\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\n\u003ch4 id=\"returns-3\"\u003eReturns:\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#returns-3\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e\u003cem\u003evoid\u003c/em\u003e\u003c/p\u003e\n\u003cdiv class=\"sources\"\u003e\n\u003cp\u003eDefined in: \u003ca href=\"https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L145\" target=\"_blank\"\u003esrc/Reporter.ts:145\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003ch3 id=\"stop\"\u003estop\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#stop\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e▸ \u003cstrong\u003estop\u003c/strong\u003e(): \u003cem\u003evoid\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003eStop reporting and perform cleanup.\u003c/p\u003e\n\u003ch4 id=\"returns-4\"\u003eReturns:\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#returns-4\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e\u003cem\u003evoid\u003c/em\u003e\u003c/p\u003e\n\u003cdiv class=\"sources\"\u003e\n\u003cp\u003eDefined in: \u003ca href=\"https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L113\" target=\"_blank\"\u003esrc/Reporter.ts:113\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003ch3 id=\"colorizetext\"\u003ecolorizeText\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#colorizetext\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e▸ \u003ccode\u003eStatic\u003c/code\u003e\u003cstrong\u003ecolorizeText\u003c/strong\u003e(\u003ccode\u003elogType\u003c/code\u003e: \u003ca href=\"/docs/api/types/logtype\"\u003e\u003cem\u003eLogType\u003c/em\u003e\u003c/a\u003e, \u003ccode\u003etext\u003c/code\u003e: \u003cem\u003estring\u003c/em\u003e): \u003cem\u003estring\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003eApply ANSI colors to given text.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003einternal\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003ch4 id=\"parameters-3\"\u003eParameters:\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#parameters-3\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h4\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth align=\"left\"\u003eName\u003c/th\u003e\u003cth align=\"left\"\u003eType\u003c/th\u003e\u003cth align=\"left\"\u003eDescription\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003e\u003ccode\u003elogType\u003c/code\u003e\u003c/td\u003e\u003ctd align=\"left\"\u003e\u003ca href=\"/docs/api/types/logtype\"\u003e\u003cem\u003eLogType\u003c/em\u003e\u003c/a\u003e\u003c/td\u003e\u003ctd align=\"left\"\u003eLog type for the text, based on which different colors will be applied.\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003e\u003ccode\u003etext\u003c/code\u003e\u003c/td\u003e\u003ctd align=\"left\"\u003e\u003cem\u003estring\u003c/em\u003e\u003c/td\u003e\u003ctd align=\"left\"\u003eText to apply the color onto.\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\n\u003ch4 id=\"returns-5\"\u003eReturns:\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#returns-5\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e\u003cem\u003estring\u003c/em\u003e\n— Text wrapped in ANSI color sequences.\u003c/p\u003e\n\u003cdiv class=\"sources\"\u003e\n\u003cp\u003eDefined in: \u003ca href=\"https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L75\" target=\"_blank\"\u003esrc/Reporter.ts:75\u003c/a\u003e\u003c/p\u003e\n\u003chr\u003e\n\u003ch3 id=\"getsymbolfortype\"\u003egetSymbolForType\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#getsymbolfortype\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h3\u003e\n\u003cp\u003e▸ \u003ccode\u003eStatic\u003c/code\u003e\u003cstrong\u003egetSymbolForType\u003c/strong\u003e(\u003ccode\u003elogType\u003c/code\u003e: \u003ca href=\"/docs/api/types/logtype\"\u003e\u003cem\u003eLogType\u003c/em\u003e\u003c/a\u003e): \u003cem\u003estring\u003c/em\u003e\u003c/p\u003e\n\u003cp\u003eGet message symbol for given log type.\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e\u003ccode\u003einternal\u003c/code\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003ch4 id=\"parameters-4\"\u003eParameters:\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#parameters-4\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h4\u003e\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u003ctable\u003e\u003cthead\u003e\u003ctr\u003e\u003cth align=\"left\"\u003eName\u003c/th\u003e\u003cth align=\"left\"\u003eType\u003c/th\u003e\u003cth align=\"left\"\u003eDescription\u003c/th\u003e\u003c/tr\u003e\u003c/thead\u003e\u003ctbody\u003e\u003ctr\u003e\u003ctd align=\"left\"\u003e\u003ccode\u003elogType\u003c/code\u003e\u003c/td\u003e\u003ctd align=\"left\"\u003e\u003ca href=\"/docs/api/types/logtype\"\u003e\u003cem\u003eLogType\u003c/em\u003e\u003c/a\u003e\u003c/td\u003e\u003ctd align=\"left\"\u003eLog type.\u003c/td\u003e\u003c/tr\u003e\u003c/tbody\u003e\u003c/table\u003e\n\u003ch4 id=\"returns-6\"\u003eReturns:\u003ca aria-hidden=\"true\" tabindex=\"-1\" href=\"#returns-6\"\u003e\u003cspan class=\"icon icon-link\"\u003e\u003c/span\u003e\u003c/a\u003e\u003c/h4\u003e\n\u003cp\u003e\u003cem\u003estring\u003c/em\u003e\n— String with the symbol.\u003c/p\u003e\n\u003cdiv class=\"sources\"\u003e\n\u003cp\u003eDefined in: \u003ca href=\"https://github.com/callstack/react-native-webpack-toolkit/blob/a16e04a/src/Reporter.ts#L58\" target=\"_blank\"\u003esrc/Reporter.ts:58\u003c/a\u003e\u003c/p\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e\u003c/div\u003e"},"__N_SSG":true},"page":"/docs/api/[type]/[id]","query":{"type":"classes","id":"reporter"},"buildId":"51mOFoY0wU4p_SVQ7Eys_","nextExport":false,"isFallback":false,"gsp":true}</script><script nomodule="" src="/_next/static/chunks/polyfills-af28de04c604a2479390.js"></script><script src="/_next/static/chunks/main-b9209abb3a6913daf906.js" async=""></script><script src="/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js" async=""></script><script src="/_next/static/chunks/framework.418cf966c791d0d18665.js" async=""></script><script src="/_next/static/chunks/commons.9f934b610ecdda1884ba.js" async=""></script><script src="/_next/static/chunks/pages/_app-7e6e57e8d9e2693310d7.js" async=""></script><script src="/_next/static/chunks/a9a7754c.4fa2ea073f9bc2b72a0a.js" async=""></script><script src="/_next/static/chunks/7e6aee08154de2032468c5f5200b4e72aec121f3.9f56daffc375d4497c1e.js" async=""></script><script src="/_next/static/chunks/pages/docs/api/%5Btype%5D/%5Bid%5D-cdf3a8c75051f11c5b83.js" async=""></script><script src="/_next/static/51mOFoY0wU4p_SVQ7Eys_/_buildManifest.js" async=""></script><script src="/_next/static/51mOFoY0wU4p_SVQ7Eys_/_ssgManifest.js" async=""></script></body></html>
