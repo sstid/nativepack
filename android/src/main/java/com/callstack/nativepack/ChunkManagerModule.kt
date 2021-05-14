@@ -1,4 +1,4 @@
-package com.reactnativewebpacktoolkit
+package com.callstack.nativepack
 
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
@@ -7,11 +7,11 @@ import com.facebook.react.bridge.Promise
 import java.lang.Error
 import java.net.URL
 
-class WebpackToolkitModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
+class ChunkManagerModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
     private var loader: ChunkLoader? = null
 
     override fun getName(): String {
-        return "WebpackToolkit"
+        return "ChunkManager"
     }
 
     @ReactMethod
